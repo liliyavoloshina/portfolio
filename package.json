@@ -11,6 +11,14 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.10.2",
+    "postcss-load-config": "^3.1.0",
+    "postcss-nesting": "^10.0.2",
     "vite": "^2.7.0"
+  },
+  "postcss": {
+    "map": false,
+    "plugins": {
+      "postcss-nesting": {}
+    }
   }
 }
