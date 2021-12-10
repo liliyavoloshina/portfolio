@@ -1,14 +1,16 @@
 <template>
   <Header />
   <Home />
+  <Works />
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Home from './components/Home.vue'
+import Header from './layout/Header.vue'
+import Home from './layout/Home.vue'
+import Works from './layout/Works.vue'
 export default {
   name: 'App',
-  components: { Header, Home }
+  components: { Header, Home, Works }
 }
 </script>
 
@@ -29,6 +31,7 @@ export default {
 
 body {
   font-family: 'Cabin', sans-serif;
+  background: var(--bg-dark);
 }
 
 a {

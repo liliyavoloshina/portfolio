@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="section home">
+  <section id="home" class="section section-home">
     <div class="container">
       <div class="home">
         <div class="info">
@@ -27,13 +27,16 @@ export default {
 </script>
 
 <style lang="postcss">
+.section-home {
+  background: var(--bg-dark);
+}
+
 .home {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
   height: 100vh;
-  background: var(--bg-dark);
 }
 
 .info {
