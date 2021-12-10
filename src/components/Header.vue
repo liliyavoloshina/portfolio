@@ -32,7 +32,7 @@ export default {
 
 <style lang="postcss" scoped>
 .nav {
-  & .nav__list {
+  &__list {
     background: red;
   }
 }
