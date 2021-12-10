@@ -13,14 +13,35 @@ export default {
 </script>
 
 <style>
+:root {
+  --black: #000;
+  --bg-dark: #f8f8f8;
+  --bg-light: #fff;
+  --grey: #474747;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+  color: var(--black);
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
   list-style-type: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
