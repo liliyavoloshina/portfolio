@@ -1,6 +1,11 @@
 <template>
-  <article class="card-work">
-    <h3 class="card-work">{{work}}</h3>
+  <article class="card-work-wrapper">
+    <div class="container">
+      <div class="card-work__info">
+        <h3 class="card-work__title">{{work}}</h3>
+      </div>
+      <div class="card-work__img"></div>
+    </div>
   </article>
 </template>
 
@@ -17,4 +22,12 @@ export default {
 </script>
 
 <style lang="postcss">
+.card-work-wrapper {
+  padding: 1rem;
+  background: var(--bg-dark);
+
+  &:hover {
+    background: var(--bg-light);
+  }
+}
 </style>

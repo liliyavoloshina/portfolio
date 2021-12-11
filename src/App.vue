@@ -20,6 +20,8 @@ export default {
   --bg-dark: #f8f8f8;
   --bg-light: #fff;
   --grey: #474747;
+  --font-base: 'Cabin', sans-serif;
+  --font-heading: 'Raleway', sans-serif;
 }
 
 * {
@@ -32,6 +34,12 @@ export default {
 body {
   font-family: 'Cabin', sans-serif;
   background: var(--bg-dark);
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -1px;
 }
 
 a {

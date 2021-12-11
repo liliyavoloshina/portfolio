@@ -47,12 +47,12 @@ export default {
     font-weight: 900;
     letter-spacing: -0.02em;
     line-height: 1.05;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font-heading);
     color: var(--black);
   }
 
   &__desc {
-    font-family: 'Cabin', sans-serif;
+    font-family: var(--font-base);
     line-height: 4rem;
     font-size: 1.8rem;
     color: var(--grey);
