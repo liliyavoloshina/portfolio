@@ -1,53 +1,44 @@
 <template>
   <section id="works" class="section section-works">
     <div class="section-works__heading container">
-      <h3 class="section-works__title">Selected projects.</h3>
+      <h2 class="section-works__title">Selected projects.</h2>
       <p class="section-works__desc">Since starting programming as a freelancer nearly 1 years ago I've created a lot of
         projects</p>
     </div>
     <div v-if="works" class="works">
-      <CardWork v-for="work in works" :key="work.id" :work="work" />
+      <Work v-for="work in works" :key="work" :work="work" />
     </div>
   </section>
 </template>
 
 <script>
-import CardWork from '../components/CardWork.vue'
+import Work from '../components/Work.vue'
+import data from '../assets/data/works.json'
 
 export default {
   name: 'Home',
-  components: { CardWork },
+  components: { Work },
   data() {
     return {
-      works: []
+      works: data
     }
   },
-
-  async created() {
-    const req = await fetch('works.json')
-    const res = await req.json()
-    this.works = res
-  },
-  methods: {}
+  mounted() {
+    console.log(data)
+  }
 }
 </script>
 
-<style lang="postcss">
+<style lang="scss">
 .section-works {
   background: var(--bg-light);
 
   &__heading {
-    display: flex;
-    flex-direction: column;
-    padding: 5rem;
-    align-items: center;
+    padding: 10% 15%;
   }
 
   &__title {
-    a
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: var(--font-heading);
+    margin-bottom: 2rem;
   }
 
   &__desc {

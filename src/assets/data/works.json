@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "Art Quiz",
+    "stack": ["html", "scss", "javascript", "spa", "webpack"],
+    "desc": "An interactive quiz where you can test your knowledge of fine arts. It provides three game type: artists quiz, pictures quiz and blitz. \n Also, it has been translated into two languages and divided into categories. \n This app was created on vanilla js without frameworks.",
+    "codeUrl": "https://github.com/liliyavoloshina/art-quiz",
+    "liveUrl": "https://liliyavoloshina-artquiz.netlify.app/"
+  }
+]

@@ -21,6 +21,7 @@ export default {
   --bg-light: #fff;
   --grey: #474747;
   --font-base: 'Cabin', sans-serif;
+  --font-base: 'Raleway', sans-serif;
   --font-heading: 'Raleway', sans-serif;
 }
 
@@ -32,14 +33,22 @@ export default {
 }
 
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: var(--font-base);
+  line-height: 1.5;
+  font-weight: 400;
   background: var(--bg-dark);
 }
 
 h1,
 h2,
 h3 {
+  font-weight: 700;
+  font-family: var(--font-heading);
   letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 a {

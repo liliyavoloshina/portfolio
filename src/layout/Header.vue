@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
+<style lang="scss" scoped>
 .header-wrapper {
   position: fixed;
   top: 0;

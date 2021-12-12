@@ -1,9 +1,0 @@
-[
-  {
-    "id": 1,
-    "title": "Art Quiz",
-    "imageSrc": "./assets/img/me.png",
-    "stack": ["html", "sass", "typescript"],
-    "desc": "Single Page Application created on typescript."
-  }
-]
