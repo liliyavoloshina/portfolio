@@ -38,6 +38,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
   background: var(--bg-light);
 }
 

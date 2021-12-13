@@ -8,7 +8,7 @@
           <li v-for="stack in work.stack" :key="stack" class="stack__item">{{stack}}</li>
         </ul>
         <div class="work__links">
-          <a :href="work.codeUrl" class="work__link">Code</a>
+          <a v-if="work.codeUrl" :href="work.codeUrl" class="work__link">Code</a>
           <a :href="work.liveUrl" class="work__link">Live</a>
         </div>
       </div>
@@ -28,7 +28,6 @@ export default {
 
 <style lang="scss">
 .work-wrapper {
-  padding: 2rem;
   background: var(--bg-dark);
 }
 
@@ -39,7 +38,7 @@ export default {
   gap: 2rem;
 
   &__info {
-    flex: 1 1 200px;
+    flex: 1 1 400px;
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -72,9 +71,11 @@ export default {
 
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: initial;
     gap: 2rem;
 
     &__info {
+      flex: 1 1 200px;
       order: 2;
     }
 

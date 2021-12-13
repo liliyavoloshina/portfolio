@@ -1,6 +1,6 @@
 <template>
   <section id="works" class="section section-works">
-    <div class="section-works__heading container">
+    <div class="section-works__heading">
       <h2 class="section-works__title">Selected projects.</h2>
       <p class="section-works__desc">Since starting programming as a freelancer nearly 1 years ago I've created a lot of
         projects</p>
@@ -22,9 +22,6 @@ export default {
     return {
       works: data
     }
-  },
-  mounted() {
-    console.log(data)
   }
 }
 </script>
@@ -34,7 +31,7 @@ export default {
   background: var(--bg-light);
 
   &__heading {
-    padding: 10% 15%;
+    padding: 10% 2rem;
   }
 
   &__title {

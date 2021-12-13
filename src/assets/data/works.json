@@ -6,5 +6,36 @@
     "desc": "An interactive quiz where you can test your knowledge of fine arts. It provides three game type: artists quiz, pictures quiz and blitz. \n Also, it has been translated into two languages and divided into categories. \n This app was created on vanilla js without frameworks.",
     "codeUrl": "https://github.com/liliyavoloshina/art-quiz",
     "liveUrl": "https://liliyavoloshina-artquiz.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "Thrift Shop",
+    "stack": ["html", "scss", "vue", "nuxt"],
+    "desc": "\"Second-hand online shop\", that allows you to add, delete items to common catalog, contact with other owners and sort/filter things. \n Based on Nuxt.js, firebase backend and auth (REST), custom cookie authentication and ssr on some pages.",
+    "codeUrl": "https://github.com/liliyavoloshina/thrift-shop",
+    "liveUrl": "https://thrift-shop.herokuapp.com/"
+  },
+  {
+    "id": 3,
+    "title": "Upbox",
+    "stack": ["html", "tailwind", "vue", "spa", "vite"],
+    "desc": "Responsive landing page created with Tailwind",
+    "codeUrl": "https://github.com/liliyavoloshina/upbox",
+    "liveUrl": "https://liliyavoloshina.github.io/upbox/"
+  },
+  {
+    "id": 4,
+    "title": "Museum",
+    "stack": ["html", "scss", "js"],
+    "desc": "Responsive landing page with sliders, custom videoplayer and ticket purchase form.",
+    "codeUrl": "https://liliyavoloshina.github.io/museum/index.html",
+    "liveUrl": "https://github.com/liliyavoloshina/museum"
+  },
+  {
+    "id": 5,
+    "title": "Peeplz",
+    "stack": ["html", "scss", "js"],
+    "desc": "Freelance start-up project. App that brings all your social networks together. \n My job was to develop client side and improve SEO.",
+    "liveUrl": "https://peeplz.online/id4/"
   }
 ]
