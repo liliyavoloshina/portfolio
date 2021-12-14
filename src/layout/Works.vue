@@ -1,9 +1,12 @@
 <template>
   <section id="works" class="section section-works">
     <div class="section-works__heading">
-      <h2 class="section-works__title">Selected projects.</h2>
-      <p class="section-works__desc">Since starting programming as a freelancer nearly 1 years ago I've created a lot of
-        projects</p>
+      <div class="container">
+        <h2 class="section-works__title">Selected projects.</h2>
+        <p class="section-works__desc">Since starting programming as a freelancer nearly 1 years ago I've created a lot
+          of
+          projects</p>
+      </div>
     </div>
     <div v-if="works" class="works">
       <Work v-for="work in works" :key="work" :work="work" />
@@ -31,7 +34,8 @@ export default {
   background: var(--bg-light);
 
   &__heading {
-    padding: 10% 2rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 
   &__title {

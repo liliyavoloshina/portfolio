@@ -57,15 +57,28 @@ export default {
     font-size: 1.8rem;
     color: var(--grey);
   }
+
+  @media (max-width: 420px) {
+    &__heading {
+      font-size: 3rem;
+    }
+
+    &__desc {
+      line-height: 3rem;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .photo {
   position: relative;
-  flex: 1 1 500px;
-  width: 500px;
-  height: 500px;
+  /* flex: 1 1 500px; */
+  /* width: 500px; */
+  /* height: 500px; */
 
   &__img {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -73,6 +86,12 @@ export default {
     bottom: 0;
     z-index: 2;
     margin: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   &__circle {

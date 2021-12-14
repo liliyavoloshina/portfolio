@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 :root {
   --black: #000;
   --bg-dark: #f8f8f8;
@@ -30,6 +30,14 @@ export default {
   padding: 0;
   box-sizing: border-box;
   color: var(--black);
+}
+
+html {
+  font-size: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 body {

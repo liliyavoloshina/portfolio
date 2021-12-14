@@ -29,6 +29,7 @@ export default {
 <style lang="scss">
 .work-wrapper {
   background: var(--bg-dark);
+  padding: 2rem 0;
 }
 
 .work {
@@ -60,7 +61,6 @@ export default {
 
   &__img {
     width: 600px;
-    height: 430px;
 
     img {
       width: 100%;
@@ -81,7 +81,6 @@ export default {
 
     &__img {
       width: 100%;
-      height: 400px;
     }
   }
 }
