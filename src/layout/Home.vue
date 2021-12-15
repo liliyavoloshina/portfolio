@@ -72,7 +72,7 @@ export default {
 
 .photo {
   position: relative;
-  /* flex: 1 1 500px; */
+  flex: 1 1 500px;
   /* width: 500px; */
   /* height: 500px; */
 
