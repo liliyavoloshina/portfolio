@@ -8,7 +8,6 @@
         </div>
         <div class="photo">
           <img class="photo__img" src="../assets/img/me.png" alt="">
-          <div class="photo__circle"></div>
         </div>
       </div>
     </div>
@@ -28,6 +27,7 @@ export default {
 
 <style lang="scss">
 .section-home {
+  padding-top: 80px;
   background: var(--bg-dark);
 }
 
@@ -37,6 +37,10 @@ export default {
   align-items: center;
   flex-wrap: wrap-reverse;
   height: 100vh;
+
+  @media (max-width: 420px) {
+    align-items: unset;
+  }
 }
 
 .info {
@@ -71,42 +75,13 @@ export default {
 }
 
 .photo {
-  position: relative;
   flex: 1 1 500px;
-  /* width: 500px; */
-  /* height: 500px; */
 
   &__img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    margin: auto;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  &__circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 450px;
-    height: 450px;
-    background: var(--bg-light);
-    border-radius: 50%;
-
-    margin: auto;
-    z-index: 1;
+    max-height: 500px;
+    object-fit: contain;
   }
 }
 </style>
