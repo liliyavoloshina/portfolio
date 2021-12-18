@@ -27,7 +27,6 @@ export default {
 
 <style lang="scss">
 .section-home {
-  padding-top: 80px;
   background: var(--bg-dark);
 }
 
@@ -35,17 +34,17 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap-reverse;
-  height: 100vh;
+  height: calc(100vh - 80px);
+  margin-top: 80px;
 
-  @media (max-width: 420px) {
-    align-items: unset;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
   }
 }
 
 .info {
-  flex: 1 1 50%;
-
   &__heading {
     font-size: 5rem;
     font-weight: 900;
@@ -62,7 +61,20 @@ export default {
     color: var(--grey);
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 1024px) {
+    &__heading {
+      font-size: 3.5rem;
+    }
+
+    &__desc {
+      line-height: 3.5rem;
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    order: 2;
+
     &__heading {
       font-size: 3rem;
     }
@@ -75,13 +87,16 @@ export default {
 }
 
 .photo {
-  flex: 1 1 500px;
-
   &__img {
     width: 100%;
     height: 100%;
+    min-width: 250px;
     max-height: 500px;
     object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    order: 1;
   }
 }
 </style>
