@@ -13,8 +13,11 @@
     </div>
     <div class="note-section">
       <div class="container">
-        <h2 class="note-section__title">You can find more in my github repo</h2>
-        <p class="note-section__desc"><a href="https://github.com/liliyavoloshina">view all projects</a></p>
+        <h2 class="note-section__title">You can find more in my github</h2>
+        <p class="note-section__desc"><a href="https://github.com/liliyavoloshina" class="arrow-link"
+            target="__blank">view all
+            projects
+          </a></p>
       </div>
     </div>
   </section>
@@ -56,6 +59,40 @@ export default {
   &__desc {
     font-size: 1.4rem;
     color: var(--grey);
+  }
+}
+
+.arrow-link {
+  padding: 2rem 0;
+  color: inherit;
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.arrow-link:after {
+  font-size: 2.5rem;
+  position: relative;
+  content: '\2192';
+  color: var(--accent);
+  bottom: -3px;
+  display: inline-block;
+  animation: 2s ease-in-out infinite arrow;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0px);
   }
 }
 </style>

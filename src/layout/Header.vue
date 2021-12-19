@@ -4,16 +4,13 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link">Home</a>
+            <a href="#about" class="nav__link underline-effect">About</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#works" class="nav__link underline-effect">Works</a>
           </li>
           <li class="nav__item">
-            <a href="#works" class="nav__link">Works</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#contact" class="nav__link underline-effect">Contact</a>
           </li>
         </ul>
       </nav>
@@ -23,12 +20,7 @@
 
 <script>
 export default {
-  name: 'Header',
-  data() {
-    return {}
-  },
-  mounted() {},
-  methods: {}
+  name: 'Header'
 }
 </script>
 
@@ -40,6 +32,7 @@ export default {
   right: 0;
   z-index: 10;
   background: var(--bg-light);
+  box-shadow: 0 1px 4px -2px rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -60,6 +53,9 @@ export default {
   }
 
   &__item {
+    position: relative;
+    flex: 1 1;
+    text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
   }
@@ -69,12 +65,12 @@ export default {
     padding: 1rem 0.5rem;
 
     &:hover {
-      color: green;
+      color: var(--accent);
     }
   }
 
   @media (min-width: 768px) {
-    flex: 0 1 40%;
+    flex: 0 1 25%;
 
     &__item {
       font-size: 1.4rem;

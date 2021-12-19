@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer-wrapper">
+  <footer id="contact" class="footer-wrapper">
     <div class="container footer">
       <h2 class="footer__title">
         Get In Touch
@@ -48,11 +48,17 @@ export default {
   &__title {
     font-size: 6.5rem;
     color: var(--bg-light);
+
+    @media (max-width: 768px) {
+      font-size: 4rem;
+    }
   }
 
   &__desc {
     font-size: 1.4rem;
     color: var(--grey);
+    padding: 0 1rem;
+    text-align: center;
   }
 }
 
@@ -61,11 +67,19 @@ export default {
 
   &__list {
     display: flex;
+    gap: 1rem;
     color: var(--bg-light);
   }
 
   &__link {
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 2rem;
+    border-radius: 100%;
+    transition: 0.3s;
 
     i {
       font-size: 1.5rem;
@@ -74,8 +88,9 @@ export default {
     }
 
     &:hover {
+      background-color: var(--accent);
       i {
-        color: green;
+        color: var(--black);
       }
     }
   }

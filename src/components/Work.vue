@@ -8,8 +8,8 @@
           <li v-for="stack in work.stack" :key="stack" class="stack__item">{{stack}}</li>
         </ul>
         <div class="work__links">
-          <a v-if="work.codeUrl" :href="work.codeUrl" class="work__link">Code</a>
-          <a :href="work.liveUrl" class="work__link">Live</a>
+          <a v-if="work.codeUrl" :href="work.codeUrl" class="work__link" target="__blank">Code</a>
+          <a :href="work.liveUrl" class="work__link" target="__blank">Live</a>
         </div>
       </div>
       <div class="work__img">
@@ -56,7 +56,13 @@ export default {
   }
 
   &__link {
+    padding: 1rem 1rem 1rem 0;
     font-weight: 700;
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--accent);
+    }
   }
 
   &__img {
@@ -90,6 +96,9 @@ export default {
   gap: 1rem;
 
   &__item {
+    padding: 0rem 0.5rem;
+    background-color: var(--grey-lighten);
+    border-radius: 4px;
   }
 }
 </style>

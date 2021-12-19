@@ -1,7 +1,7 @@
 <template>
-  <section id="home" class="section section-home">
+  <section id="about" class="section section-about">
     <div class="container">
-      <div class="home">
+      <div class="about">
         <div class="info">
           <h2 class="info__heading">frontend-developer.</h2>
           <p class="info__desc">Hi! I'm Liliya Voloshina, a passionate Front-end Developer based in Kazakhstan.</p>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'About',
   data() {
     return {}
   },
@@ -26,11 +26,11 @@ export default {
 </script>
 
 <style lang="scss">
-.section-home {
+.section-about {
   background: var(--bg-dark);
 }
 
-.home {
+.about {
   display: flex;
   justify-content: space-between;
   align-items: center;
