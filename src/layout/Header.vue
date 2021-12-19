@@ -45,6 +45,10 @@ export default {
 .header {
   display: flex;
   justify-content: flex-end;
+
+  &.container {
+    padding: 0;
+  }
 }
 
 .nav {
@@ -56,13 +60,13 @@ export default {
   }
 
   &__item {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
 
   &__link {
     display: block;
-    padding: 1.4rem 1rem;
+    padding: 1rem 0.5rem;
 
     &:hover {
       color: green;
@@ -71,6 +75,14 @@ export default {
 
   @media (min-width: 768px) {
     flex: 0 1 40%;
+
+    &__item {
+      font-size: 1.4rem;
+    }
+
+    &__link {
+      padding: 1.4rem 1rem;
+    }
   }
 }
 </style>

@@ -2,15 +2,17 @@
   <Header />
   <Home />
   <Works />
+  <Footer />
 </template>
 
 <script>
 import Header from './layout/Header.vue'
 import Home from './layout/Home.vue'
 import Works from './layout/Works.vue'
+import Footer from './layout/Footer.vue'
 export default {
   name: 'App',
-  components: { Header, Home, Works }
+  components: { Header, Home, Works, Footer }
 }
 </script>
 
@@ -57,6 +59,10 @@ h3 {
 
 h2 {
   font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
 }
 
 a {

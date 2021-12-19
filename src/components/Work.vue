@@ -2,7 +2,7 @@
   <article class="work-wrapper">
     <div class="work container">
       <div class="work__info">
-        <h2 class="work__title">{{work.title}}</h2>
+        <h3 class="work__title">{{work.title}}</h3>
         <p class="work__desc">{{work.desc}}</p>
         <ul class="stack">
           <li v-for="stack in work.stack" :key="stack" class="stack__item">{{stack}}</li>
