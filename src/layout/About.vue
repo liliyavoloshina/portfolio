@@ -4,7 +4,7 @@
       <div class="about">
         <div class="info">
           <h2 class="info__heading">frontend-developer.</h2>
-          <p class="info__desc">Hi! I'm Liliya Voloshina, a passionate Front-end Developer based in Kazakhstan.</p>
+          <p class="info__desc">Hi! I'm Liliya Voloshina, a passionate Front-end Developer.</p>
         </div>
         <div class="photo">
           <img class="photo__img" src="/img/me.png" alt="">
