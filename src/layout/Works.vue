@@ -3,9 +3,9 @@
     <div class="note-section">
       <div class="container">
         <h2 class="note-section__title">Selected projects.</h2>
-        <p class="note-section__desc">Since starting programming as a freelancer nearly 1 years ago I've created a lot
+        <p class="note-section__desc">Since starting programming as a freelancer nearly 1 year ago I've created a lot
           of
-          projects</p>
+          projects:</p>
       </div>
     </div>
     <div v-if="works" class="works">
