@@ -28,8 +28,8 @@
     "title": "Museum",
     "stack": ["html", "scss", "js"],
     "desc": "Responsive landing page with sliders, custom videoplayer and ticket purchase form.",
-    "codeUrl": "https://liliyavoloshina.github.io/museum/index.html",
-    "liveUrl": "https://github.com/liliyavoloshina/museum"
+    "codeUrl": "https://github.com/liliyavoloshina/museum",
+    "liveUrl": "https://liliyavoloshina.github.io/museum/index.html"
   },
   {
     "id": 5,
@@ -37,5 +37,13 @@
     "stack": ["html", "scss", "js"],
     "desc": "Freelance start-up project. App that brings all your social networks together. \n My job was to develop client side and improve SEO.",
     "liveUrl": "https://peeplz.online/id4/"
+  },
+  {
+    "id": 6,
+    "title": "Christmas Tree",
+    "stack": ["react", "scss", "spa", "webpack"],
+    "desc": "An application that allows you to sort, filter christmas toys and decorate the Christmas tree.",
+    "codeUrl": "https://github.com/liliyavoloshina/christmas-task",
+    "liveUrl": "https://liliyavoloshina-christmas-task.netlify.app/"
   }
 ]
