@@ -7,7 +7,7 @@
           <p class="info__desc">Hi! I'm Liliya Voloshina, a passionate Front-end Developer.</p>
         </div>
         <div class="photo">
-          <img class="photo__img" src="/img/me.png" alt="">
+          <img class="photo__img" src="/img/me.webp" alt="">
         </div>
       </div>
     </div>

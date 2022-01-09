@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="work__img">
-        <img :src="`/img/${work.id}.png`" :alt="work.title">
+        <img :src="`/img/${work.id}.webp`" :alt="work.title">
       </div>
     </div>
   </article>
