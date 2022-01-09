@@ -8,7 +8,6 @@
         </div>
         <div class="photo">
           <img class="photo__img" src="/img/me.png" alt="">
-          <!-- <img class="photo__img" src="../assets/img/me.png" alt=""> -->
         </div>
       </div>
     </div>

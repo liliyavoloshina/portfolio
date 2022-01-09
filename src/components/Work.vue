@@ -14,7 +14,6 @@
       </div>
       <div class="work__img">
         <img :src="`/img/${work.id}.png`" :alt="work.title">
-        <!-- <img :src="`assets/img/${work.id}.png`" :alt="work.title"> -->
       </div>
     </div>
   </article>
