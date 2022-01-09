@@ -25,7 +25,7 @@
 
 <script>
 import Work from '../components/Work.vue'
-import data from '../assets/data/works.json'
+import data from '../data/works.json'
 
 export default {
   name: 'Home',
