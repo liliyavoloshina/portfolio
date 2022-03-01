@@ -45,5 +45,13 @@
     "desc": "An application that allows you to sort, filter christmas toys and decorate the Christmas tree.",
     "codeUrl": "https://github.com/liliyavoloshina/christmas-task",
     "liveUrl": "https://liliyavoloshina-christmas-task.netlify.app/"
+  },
+  {
+    "id": 7,
+    "title": "Lang App",
+    "stack": ["react", "redux", "redux-toolkit", "typescript", "Material UI"],
+    "desc": "An application for learning English in a playful way. There are two games for memorizing words, the ability to register, add words to a separate list, save the learning progress, as well as long-term and short-term statistics.",
+    "codeUrl": "https://github.com/liliyavoloshina/rslang/tree/develop",
+    "liveUrl": "https://rslang-liliyavoloshina.netlify.app/"
   }
 ]
